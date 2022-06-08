@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: Radikal;
+  src: url(font/Radikal/Radikal.otf);
+}
+
+@font-face {
+  font-family: Radikal;
+  src: url(font/Radikal/RadikalBold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Radikal;
+  src: url(font/Radikal/RadikalMedium.otf);
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: Radikal;
+  src: url(font/Radikal/RadikalThin.otf);
+  font-weight: thin;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Radikal", "Inter", sans-serif, "Courier New", Courier, monospace;
+}
+
+.desktop {
+  position: fixed;
+  width: 100%;
+  background-color: #2f2e2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 120px;
+  font-weight: 400;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.desktop .logo__wrapper img {
+  width: 160px;
+  height: 30px;
+}
+
+.desktop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 80px;
+}
+
+.desktop ul li {
+  list-style-type: none;
+}
+
+.desktop ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero {
+  vertical-align: middle;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .hero__wrapper {
+  color: #ffffff;
+  padding: 0px 120px;
+  position: absolute;
+  top: 35%;
+  width: 60%;
+}
+
+.hero .hero__wrapper .hero__title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero .hero__wrapper .hero__brief {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 36px;
+}
+
+.hero .hero__wrapper .hero__button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #fa4b14;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #fa4b14;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero .hero__wrapper .hero__button:hover {
+  background-color: transparent;
+  color: #fa4b14;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section__wrapper {
+  padding: 0px 120px;
+  margin-top: 80px;
+}
+
+.section__wrapper p {
+  font-size: 18px;
+  margin: 30px 0;
+  line-height: 36px;
+}
+
+.section__title {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.section__title h1 {
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.section__title .section__title__left {
+  width: 100px;
+  height: 5px;
+  background-color: #fa4b14;
+}
+
+.section__title .section__title__right {
+  width: 100px;
+  height: 5px;
+  background-color: #fa4b14;
+  float: right;
+}
+
+.section__title .section__title__center {
+  width: 100px;
+  height: 5px;
+  background-color: #fa4b14;
+  margin: auto;
+}
+
+.wwdsection__productwrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.wwdsection__productwrapper .wwdsection__product {
+  position: relative;
+  width: 30%;
+}
+
+.wwdsection__productwrapper .wwdsection__product img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wwdsection__productwrapper .wwdsection__product div {
+  position: absolute;
+  top: 40%;
+  padding: 0px 20px;
+  width: 90%;
+  color: #ffffff;
+  height: 70px;
+}
+
+.wwdsection__productwrapper .wwdsection__product div h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.wwdsection__productwrapper .wwdsection__product div .section__title__left {
+  width: 60px;
+  height: 3px;
+  background-color: #fa4b14;
+  text-align: center;
+  bottom: 0px;
+}
+
+.wwdsection__productwrapper .wwdsection__product .moretext {
+  height: 130px;
+}
+
+.whychoseus__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whychoseus__wrapper .whychoseus__each {
+  width: 15%;
+  text-align: center;
+}
+
+.whychoseus__wrapper .whychoseus__each img {
+  width: 60px;
+  height: 60px;
+}
+
+.whychoseus__wrapper .whychoseus__each h5 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #454545;
+  margin-top: 20px;
+}
+
+.whychoseus__wrapper .whychoseus__each p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #454545;
+  margin: 15px 0;
+}
+
+.left {
+  margin: 0;
+}
+
+.missionvision__container {
+  position: relative;
+  color: #ffffff;
+}
+
+.missionvision {
+  position: absolute;
+  top: 30%;
+}
+
+.missionvision__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 80px;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
