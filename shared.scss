@@ -1,0 +1,182 @@
+// IMPORT FONT (Radikal).
+
+@font-face {
+    font-family: Radikal;
+    src: url(font/Radikal/Radikal.otf);
+  }
+  
+  @font-face {
+    font-family: Radikal;
+    src: url(font/Radikal/RadikalBold.otf);
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: Radikal;
+    src: url(font/Radikal/RadikalMedium.otf);
+    font-weight: medium;
+  }
+  
+  @font-face {
+    font-family: Radikal;
+    src: url(font/Radikal/RadikalThin.otf);
+    font-weight: thin;
+  }
+  
+  // IMPORT FONT (INTER) .
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  
+  // CSS VARIABLES DECLARATION
+  $font-stack: "Radikal", "Inter", sans-serif;
+  
+  //BRAND COLORS
+  $primary-color: #fa4b14;
+  $secondary-color: #454545;
+  $background-color: #2f2e2c;
+  $white-color: #ffffff;
+  
+  //DEFAULT SETTINGS
+  * {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: $font-stack, "Courier New", Courier, monospace;
+  }
+  
+
+// HEADER
+//  DESKTOP NAV BAR
+
+.desktop {
+    position: fixed;
+    width: 100%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+    font-weight: 400;
+    font-size: 18px;
+    z-index: 1000;
+  
+    .logo__wrapper {
+      img {
+        width: 160px;
+        height: 30px;
+      }
+    }
+  
+    ul {
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+      li {
+        list-style-type: none;
+  
+        a {
+          text-decoration: none;
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+
+
+//FOOTER SECTION
+
+.footer__wrapper {
+    background-color: #2f2e2c;
+    width: 100%;
+    // height: 700px;
+    padding-top: 120px;
+  
+    .footer__offset{
+      background-color: $primary-color;
+      color: $white-color;
+      margin: 0px 120px;
+      padding: 50px 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  
+      img{
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+      }
+      p{
+        font-size: 26px;
+        font-weight: 500;
+      }
+      button{
+        background-color: #2F2E2C;
+        padding: 10px;
+        border: 1px solid #2F2E2C;
+        border-radius: 4px;
+        color: $white-color;
+        font-size: 18px;
+        letter-spacing: 1px;
+      }
+    }
+  
+    .footer__logo{
+      display: flex;
+      justify-content: center;
+      padding: 50px 0px;
+      img {
+        width: 160px;
+        height: 30px;
+      }
+    }
+  
+    .footer__nav {
+      border-top: 1px solid #ffffff;
+      padding: 30px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 120px;
+      font-size: 18px;
+      font-weight: 400;
+      color: $white-color;
+      
+      .footer__nav__main{
+        ul{
+        display: flex;
+        flex-direction: row;
+          li{
+            list-style-type: none;
+            margin-right: 80px;
+            a {
+              text-decoration: none;
+              color: $white-color;
+              
+            }
+          }
+        }
+      }
+  
+      .footer__nav__socials{
+        display: flex;
+        flex-direction: row;
+        svg {
+          margin-left: 80px;
+          fill: $white-color;
+          width: 20px;
+          height: 20px;
+        }
+      }
+  
+    }
+  
+    .footer__rightreserved {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      color: #c4c4c4;
+      padding: 30px 0px;
+    }
+  }
+    

@@ -43,43 +43,7 @@ $white-color: #ffffff;
   font-family: $font-stack, "Courier New", Courier, monospace;
 }
 
-// HEADER
-//  DESKTOP NAV BAR
 
-.desktop {
-  position: fixed;
-  width: 100%;
-  background-color: $background-color;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px 120px;
-  font-weight: 400;
-  font-size: 18px;
-  z-index: 1000;
-
-  .logo__wrapper {
-    img {
-      width: 160px;
-      height: 30px;
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    li {
-      list-style-type: none;
-
-      a {
-        text-decoration: none;
-        color: $white-color;
-      }
-    }
-  }
-}
 
 //HERO SECTION
 .hero {
@@ -151,7 +115,6 @@ $white-color: #ffffff;
     width: 100px;
     height: 5px;
     background-color: $primary-color;
-    
   }
 
   .section__title__right {
@@ -191,13 +154,13 @@ $white-color: #ffffff;
       width: 90%;
       color: $white-color;
       height: 70px;
-      
-            h6 {
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 25px;
-            }
-        
+
+      h6 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+
       .section__title__left {
         width: 60px;
         height: 3px;
@@ -207,64 +170,100 @@ $white-color: #ffffff;
       }
     }
 
-    .moretext{
-        height: 130px;
-      } 
+    .moretext {
+      height: 130px;
+    }
   }
 }
 
-
 // WHY CHOOSE US? SECTION
-.whychoseus__wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.whychoseus__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    .whychoseus__each{
-width: 15%;
-text-align: center;
-        img{
-            width: 60px;
-            height: 60px;
-        }
-        h5{
-            font-weight: 600;
-            font-size: 22px;
-            color: #454545;
-            margin-top: 20px;
-        
-        }
-        p{
-            font-weight: 300;
-            font-size: 18px;
-            color: #454545;
-            margin: 15px 0;
-          
-        }
+  .whychoseus__each {
+    width: 15%;
+    text-align: center;
+    img {
+      width: 60px;
+      height: 60px;
     }
+    h5 {
+      font-weight: 600;
+      font-size: 22px;
+      color: #454545;
+      margin-top: 20px;
+    }
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      color: #454545;
+      margin: 15px 0;
+    }
+  }
 }
 
 // OUR MISSION AND VISION SECTION
-.left{
-    margin: 0;
+.left {
+  margin: 0;
 }
-.missionvision__container{
-position: relative;
-color: $white-color;
+.missionvision__container {
+  position: relative;
+  color: $white-color;
+}
+.missionvision {
+  // padding: 0;
+  position: absolute;
+  top: 30%;
+}
 
-}
-.missionvision{
-    // padding: 0;
-    position: absolute;
-    top: 30%;
-}
-
-.missionvision__image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-top: 80px;
-    padding: 0;
+.missionvision__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 80px;
+  padding: 0;
 }
 
 // PRODUCTS SECTION
+.section__wrapper.productswrapper {
+  padding: 80px 120px 60px 120px;
+  margin-top: 0px;
+  background-color: #fa4a141e;
+}
+
+.products {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+
+  .product {
+    width: 48%;
+    height: 300px;
+    background-color: $white-color;
+    border-radius: 8px;
+  }
+}
+
+.product__all {
+  color: $primary-color;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 60px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  path {
+    fill: $primary-color;
+  }
+}
+
+// OUR PARTNERS SECTION
+

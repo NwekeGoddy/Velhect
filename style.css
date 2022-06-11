@@ -30,54 +30,6 @@
   font-family: "Radikal", "Inter", sans-serif, "Courier New", Courier, monospace;
 }
 
-.desktop {
-  position: fixed;
-  width: 100%;
-  background-color: #2f2e2c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 30px 120px;
-  font-weight: 400;
-  font-size: 18px;
-  z-index: 1000;
-}
-
-.desktop .logo__wrapper img {
-  width: 160px;
-  height: 30px;
-}
-
-.desktop ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 80px;
-}
-
-.desktop ul li {
-  list-style-type: none;
-}
-
-.desktop ul li a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
 .hero {
   vertical-align: middle;
 }
@@ -282,5 +234,59 @@
      object-fit: cover;
   margin-top: 80px;
   padding: 0;
+}
+
+.section__wrapper.productswrapper {
+  padding: 80px 120px 60px 120px;
+  margin-top: 0px;
+  background-color: #fa4a141e;
+}
+
+.products {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 30px;
+}
+
+.products .product {
+  width: 48%;
+  height: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.product__all {
+  color: #fa4b14;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 60px;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__all path {
+  fill: #fa4b14;
 }
 /*# sourceMappingURL=style.css.map */
